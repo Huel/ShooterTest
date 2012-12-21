@@ -5,7 +5,7 @@ import flash.events.Event;
 import starling.core.Starling;
 
 
-[SWF(width="400", height="300", frameRate="60", backgroundColor="#ffffff")]
+[SWF(width="800", height="600", frameRate="60", backgroundColor="#ffffff")]
 
 
 	/**
@@ -15,14 +15,12 @@ import starling.core.Starling;
 	public class Startup extends Sprite
 	{
 		
-		private var _starling:Starling;
+		private var mstarling:Starling;
 		
 		public function Startup()
 		{
-			
-			
-			_starling = new Starling(Game, stage);
-			_starling.start();
+			mstarling = new Starling(Game, stage);
+			mstarling.start();
 		}
 		
 	}
