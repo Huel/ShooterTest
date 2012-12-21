@@ -71,16 +71,9 @@ import starling.display.Quad;
 			
 			var pos:Point = touch.getLocation(stage);
 			
-			var q : Player = new Player();
-			q.x = pos.x-100;
-			q.y = pos.y+65;
- 
-			q.pivotX = q.width / 2;
-			q.pivotY = q.height / 2;
-			addChild(q);
- 
- 
-			if (q.x > stage.stageWidth + 200) removeChild(q);
+			
+			player.x = pos.x;
+			player.y = pos.y;	
 		
 		}
 
